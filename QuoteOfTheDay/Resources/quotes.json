@@ -1,0 +1,27 @@
+[
+{
+    "text": "quote 1",
+    "author": "author",
+    "tags": ["tag 1", "tag 2"]
+},
+{
+    "text": "quote 2",
+    "author": "author 2",
+    "tags": ["tag 3", "tag 4"]
+},
+{
+    "text": "quote 3",
+    "author": "author 3",
+    "tags": ["tag 1", "tag 2"]
+},
+{
+    "text": "quote 4",
+    "author": "author",
+    "tags": ["tag 1", "tag 2"]
+},
+{
+    "text": "quote 5",
+    "author": "author",
+    "tags": ["tag 1", "tag 2"]
+}
+]
