@@ -15,6 +15,7 @@ struct QuoteView: View {
             Spacer()
             Text(quote.text)
                 .font(Font.Charter.roman(size: 18))
+                .minimumScaleFactor(0.5)
                 .foregroundColor(.black)
                 .padding(.bottom, 20)
                 .padding([.leading, .trailing], 20)
