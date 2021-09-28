@@ -16,19 +16,23 @@ struct QuotesListView: View {
     var body: some View {
         VStack {
             SettingsView(viewModel: viewModel, interactor: interactor)
-            List(viewModel.quotes) { quote in
-                Button(action: {
-                    interactor.selected(quote: quote)
-                }, label: {
-                    switch viewModel.presentationType {
-                        case .author:
-                            Text(quote.author)
-                        case .quote:
-                            Text(quote.text).lineLimit(1)
-                    }
-                })
+            Divider()
+            List {
+                ForEach(viewModel.quotes) { quote in
+                    Button(action: {
+                        interactor.selected(quote: quote)
+                    }, label: {
+                        switch viewModel.presentationType {
+                            case .author:
+                                Text(quote.author)
+                            case .quote:
+                                Text(quote.text).lineLimit(1)
+                        }
+                    }).listRowBackground(Color.bookBackground)
+                }
             }
-        }
+        }.background(Color.bookBackground)
+
     }
 }
 
@@ -59,6 +63,7 @@ struct SettingsView: View {
                 Text("Widok: ")
                 Text(viewModel.presentationType.rawValue)
             }
+            .foregroundColor(.black)
         }
     }
 
@@ -80,6 +85,7 @@ struct SettingsView: View {
                 Text("Kategoria: ")
                 Text(viewModel.selectedCategory ?? "-brak-")
             }
+            .foregroundColor(.black)
         }
     }
 }
