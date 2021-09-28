@@ -25,9 +25,16 @@ final class QuotesListViewModel: ObservableObject {
     }
 }
 
-enum PresentationOption: String, CaseIterable {
-    case author = "Autor"
-    case quote = "Cytat"
+enum PresentationOption: CaseIterable {
+    case author
+    case quote
+    
+    var name: String {
+        switch self {
+        case .author: return L10n.QuotesList.Settings.ViewType.author
+        case .quote: return L10n.QuotesList.Settings.ViewType.quote
+        }
+    }
 }
 
 typealias QuoteCategory = String

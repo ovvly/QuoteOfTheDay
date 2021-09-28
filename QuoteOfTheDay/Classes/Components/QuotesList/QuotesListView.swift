@@ -55,13 +55,13 @@ struct SettingsView: View {
                 Button(action: {
                     interactor.selected(presentationOption: option)
                 }, label: {
-                    Text(option.rawValue)
+                    Text(option.name)
                 })
             }
         } label: {
             HStack {
-                Text("Widok: ")
-                Text(viewModel.presentationType.rawValue)
+                Text(L10n.QuotesList.Settings.viewType)
+                Text(viewModel.presentationType.name)
             }
             .foregroundColor(.black)
         }
@@ -82,8 +82,8 @@ struct SettingsView: View {
             }
         } label: {
             HStack {
-                Text("Kategoria: ")
-                Text(viewModel.selectedCategory ?? "-brak-")
+                Text(L10n.QuotesList.Settings.categoryType)
+                Text(viewModel.selectedCategory ?? L10n.QuotesList.Settings.Category.none)
             }
             .foregroundColor(.black)
         }

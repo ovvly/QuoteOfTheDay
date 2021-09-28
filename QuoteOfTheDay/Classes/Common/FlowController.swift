@@ -29,7 +29,7 @@ final class FlowController {
     private func createQuotesListViewController() -> UIViewController {
         let quotesListViewController = viewControllersFactory.createQuotesListViewController(actions: quotesListActions)
         let navigationController = UINavigationController(rootViewController: quotesListViewController)
-        let tabBarItem = UITabBarItem(title: "Lista", image: UIImage(systemName: "list.dash"), selectedImage: nil)
+        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.list, image: UIImage(systemName: "list.dash"), selectedImage: nil)
         quotesListNavigationController = navigationController
         navigationController.tabBarItem = tabBarItem
         return navigationController
@@ -37,7 +37,7 @@ final class FlowController {
 
     private func createQuoteOfTheDayViewController() -> UIViewController {
         let viewController = viewControllersFactory.createQuoteOfTheDayViewController()
-        let tabBarItem = UITabBarItem(title: "Losowe", image: UIImage(systemName: "shuffle"), selectedImage: nil)
+        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.random, image: UIImage(systemName: "shuffle"), selectedImage: nil)
         viewController.tabBarItem = tabBarItem
         return viewController
     }
