@@ -54,10 +54,8 @@
 		2C20665A260A768900ACFFBD /* Dependecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependecies.swift; sourceTree = "<group>"; };
 		2C206661260A793100ACFFBD /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		2C20666E260B398400ACFFBD /* QuotesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesPageViewController.swift; sourceTree = "<group>"; };
-		2C2A8D4C270392B400C200FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C2A8D852703A07400C200FD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C2A8D872703A0B000C200FD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = pl; path = pl.lproj/quotes.json; sourceTree = "<group>"; };
-		2C2A8D892703A0B400C200FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/quotes.json; sourceTree = "<group>"; };
 		2C2A8D8B2703A35900C200FD /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		2C9A8CA026430DFD00C0469F /* QuotesFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesFetcher.swift; sourceTree = "<group>"; };
 		2C9A8CA126430DFD00C0469F /* QuotesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesProvider.swift; sourceTree = "<group>"; };
@@ -273,10 +271,9 @@
 			};
 			buildConfigurationList = 2C206608260A74F500ACFFBD /* Build configuration list for PBXProject "QuoteOfTheDay" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = pl;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				pl,
 			);
 			mainGroup = 2C206604260A74F500ACFFBD;
@@ -357,7 +354,6 @@
 		2C2A8D4D270392B400C200FD /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C2A8D4C270392B400C200FD /* en */,
 				2C2A8D852703A07400C200FD /* pl */,
 			);
 			name = Localizable.strings;
@@ -367,7 +363,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2C2A8D872703A0B000C200FD /* pl */,
-				2C2A8D892703A0B400C200FD /* en */,
 			);
 			name = quotes.json;
 			sourceTree = "<group>";
