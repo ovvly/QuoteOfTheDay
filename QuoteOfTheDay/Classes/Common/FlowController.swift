@@ -22,8 +22,16 @@ final class FlowController {
         let tabBarController = UITabBarController()
         let quoteOfTheDayViewController = createQuoteOfTheDayViewController()
         let quotesListViewController = createQuotesListViewController()
-        tabBarController.setViewControllers([quoteOfTheDayViewController, quotesListViewController], animated: false)
+        let infoViewController = createInfoViewController()
+        tabBarController.setViewControllers([quoteOfTheDayViewController, quotesListViewController, infoViewController], animated: false)
         return tabBarController
+    }
+
+    private func createInfoViewController() -> UIViewController {
+        let infoViewController = viewControllersFactory.createInfoViewController()
+        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.info, image: UIImage(systemName: "info.circle"), selectedImage: nil)
+        infoViewController.tabBarItem = tabBarItem
+        return infoViewController
     }
 
     private func createQuotesListViewController() -> UIViewController {

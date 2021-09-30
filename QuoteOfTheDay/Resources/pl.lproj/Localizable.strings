@@ -8,9 +8,12 @@
 
 "Tabbar.Name.list" = "Lista";
 "Tabbar.Name.random" = "Losowe";
+"Tabbar.Name.info" = "Informacje";
 
 "QuotesList.Settings.viewType" = "Widok: ";
 "QuotesList.Settings.categoryType" = "Kategoria: ";
 "QuotesList.Settings.Category.none" = "-brak-";
 "QuotesList.Settings.ViewType.author" = "Autor";
 "QuotesList.Settings.ViewType.quote" = "Cytat";
+
+

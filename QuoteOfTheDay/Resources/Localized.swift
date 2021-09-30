@@ -32,6 +32,8 @@ internal enum L10n {
 
   internal enum Tabbar {
     internal enum Name {
+      /// Informacje
+      internal static let info = L10n.tr("Localizable", "Tabbar.Name.info")
       /// Lista
       internal static let list = L10n.tr("Localizable", "Tabbar.Name.list")
       /// Losowe

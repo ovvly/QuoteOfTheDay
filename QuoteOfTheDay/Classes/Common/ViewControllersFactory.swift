@@ -28,4 +28,9 @@ final class ViewControllersFactory {
         let view = QuoteView(quote: quote)
         return UIHostingController(rootView: view)
     }
+
+    func createInfoViewController() -> UIViewController {
+        let view = InfoView()
+        return UIHostingController(rootView: view)
+    }
 }

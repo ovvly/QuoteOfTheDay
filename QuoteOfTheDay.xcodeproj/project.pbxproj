@@ -27,6 +27,7 @@
 		AA24B20830DBA27F9521D768 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24B68E75B5D58A437FA320 /* Quote.swift */; };
 		AA24B283FE4C739984835543 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24BD19F46D082D1D408654 /* Color.swift */; };
 		AA24B39D62C764F8338291DF /* QuotesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24B3172B25C7B610977A76 /* QuotesListInteractor.swift */; };
+		AA24B5F9E3D25E4A1D1902C6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24B11ACB521617ADDA92EB /* InfoView.swift */; };
 		AA24BB3DBEC47CCFB99CBBF4 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24B89E499C92325DE7A56D /* Font.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		2C9A8CA126430DFD00C0469F /* QuotesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesProvider.swift; sourceTree = "<group>"; };
 		2C9A8CA526430E4F00C0469F /* QuotesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesListView.swift; sourceTree = "<group>"; };
 		2C9A8CA626430E4F00C0469F /* QuotesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesListViewModel.swift; sourceTree = "<group>"; };
+		AA24B11ACB521617ADDA92EB /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		AA24B3172B25C7B610977A76 /* QuotesListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesListInteractor.swift; sourceTree = "<group>"; };
 		AA24B4FF57818667515E57EB /* QuotesCategoriesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesCategoriesProvider.swift; sourceTree = "<group>"; };
 		AA24B68E75B5D58A437FA320 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				2C206660260A790700ACFFBD /* QuotesList */,
 				2C20665F260A78FD00ACFFBD /* QuoteOfTheDay */,
+				AA24B362D49053CC64B2D381 /* Info */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -203,6 +206,14 @@
 				AA24B68E75B5D58A437FA320 /* Quote.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AA24B362D49053CC64B2D381 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				AA24B11ACB521617ADDA92EB /* InfoView.swift */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		AA24BD3C4704F2CDE630DA4E /* Categories */ = {
@@ -329,6 +340,7 @@
 				AA24BB3DBEC47CCFB99CBBF4 /* Font.swift in Sources */,
 				AA24B39D62C764F8338291DF /* QuotesListInteractor.swift in Sources */,
 				AA24B0E904DA8EC606C2B403 /* QuotesCategoriesProvider.swift in Sources */,
+				AA24B5F9E3D25E4A1D1902C6 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
