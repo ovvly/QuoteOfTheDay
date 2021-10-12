@@ -183,9 +183,9 @@
 		2C206660260A790700ACFFBD /* QuotesList */ = {
 			isa = PBXGroup;
 			children = (
+				AA24B3172B25C7B610977A76 /* QuotesListInteractor.swift */,
 				2C9A8CA526430E4F00C0469F /* QuotesListView.swift */,
 				2C9A8CA626430E4F00C0469F /* QuotesListViewModel.swift */,
-				AA24BD3C4704F2CDE630DA4E /* Categories */,
 			);
 			path = QuotesList;
 			sourceTree = "<group>";
@@ -214,14 +214,6 @@
 				AA24B11ACB521617ADDA92EB /* InfoView.swift */,
 			);
 			path = Info;
-			sourceTree = "<group>";
-		};
-		AA24BD3C4704F2CDE630DA4E /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				AA24B3172B25C7B610977A76 /* QuotesListInteractor.swift */,
-			);
-			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
