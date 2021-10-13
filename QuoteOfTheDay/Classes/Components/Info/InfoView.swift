@@ -16,8 +16,7 @@ struct InfoView: View {
             }
             Spacer()
         }
-        .background(Color.bookBackground)
-        .ignoresSafeArea(edges: .top)
+        .background(Color.bookBackground, ignoresSafeAreaEdges: .top)
     }
 }
 

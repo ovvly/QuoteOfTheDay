@@ -34,8 +34,7 @@ struct QuotesListView: View {
             }
             Divider()
         }
-        .background(Color.bookBackground)
-        .ignoresSafeArea(edges: .top)
+        .background(Color.bookBackground, ignoresSafeAreaEdges: .top)
         .listStyle(.plain)
     }
 }
