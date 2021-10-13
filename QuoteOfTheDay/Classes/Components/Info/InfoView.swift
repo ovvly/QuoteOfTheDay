@@ -12,6 +12,7 @@ struct InfoView: View {
             HStack {
                 Spacer()
                 Text("info")
+                    .foregroundColor(.black)
                 Spacer()
             }
             Spacer()
