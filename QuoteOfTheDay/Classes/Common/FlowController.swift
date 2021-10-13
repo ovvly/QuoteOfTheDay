@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class FlowController {
     private let viewControllersFactory = ViewControllersFactory()
@@ -26,12 +27,12 @@ final class FlowController {
         tabBarController.setViewControllers([quoteOfTheDayViewController, quotesListViewController, infoViewController], animated: false)
         return tabBarController
     }
-
-    private func createInfoViewController() -> UIViewController {
-        let infoViewController = viewControllersFactory.createInfoViewController()
-        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.info, image: UIImage(systemName: "info.circle"), selectedImage: nil)
-        infoViewController.tabBarItem = tabBarItem
-        return infoViewController
+    
+    private func createQuoteOfTheDayViewController() -> UIViewController {
+        let viewController = viewControllersFactory.createQuoteOfTheDayViewController()
+        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.random, image: UIImage(systemName: "shuffle"), selectedImage: nil)
+        viewController.tabBarItem = tabBarItem
+        return viewController
     }
 
     private func createQuotesListViewController() -> UIViewController {
@@ -40,14 +41,15 @@ final class FlowController {
         let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.list, image: UIImage(systemName: "list.dash"), selectedImage: nil)
         quotesListNavigationController = navigationController
         navigationController.tabBarItem = tabBarItem
+        navigationController.navigationBar.backgroundColor = UIColor(Color.bookBackground)
         return navigationController
     }
 
-    private func createQuoteOfTheDayViewController() -> UIViewController {
-        let viewController = viewControllersFactory.createQuoteOfTheDayViewController()
-        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.random, image: UIImage(systemName: "shuffle"), selectedImage: nil)
-        viewController.tabBarItem = tabBarItem
-        return viewController
+    private func createInfoViewController() -> UIViewController {
+        let infoViewController = viewControllersFactory.createInfoViewController()
+        let tabBarItem = UITabBarItem(title: L10n.Tabbar.Name.info, image: UIImage(systemName: "info.circle"), selectedImage: nil)
+        infoViewController.tabBarItem = tabBarItem
+        return infoViewController
     }
 
     //MARK: Actions

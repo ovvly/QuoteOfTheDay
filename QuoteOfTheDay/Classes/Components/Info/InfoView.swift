@@ -7,12 +7,22 @@ import SwiftUI
 
 struct InfoView: View {
     var body: some View {
-        Text("info")
+        VStack {
+            Spacer()
+            HStack {
+                Spacer()
+                Text("info")
+                Spacer()
+            }
+            Spacer()
+        }
+        .background(Color.bookBackground)
+        .ignoresSafeArea(edges: .top)
     }
 }
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        InfoView()            
     }
 }

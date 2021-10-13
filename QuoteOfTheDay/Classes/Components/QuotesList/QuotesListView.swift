@@ -16,7 +16,6 @@ struct QuotesListView: View {
     var body: some View {
         VStack {
             SettingsView(viewModel: viewModel, interactor: interactor)
-            Divider()
             List {
                 ForEach(viewModel.quotes) { quote in
                     Button(action: {
@@ -25,14 +24,19 @@ struct QuotesListView: View {
                         switch viewModel.presentationType {
                             case .author:
                                 Text(quote.author)
+                                    .foregroundColor(.black)
                             case .quote:
                                 Text(quote.text).lineLimit(1)
+                                    .foregroundColor(.black)
                         }
                     }).listRowBackground(Color.bookBackground)
                 }
             }
-        }.background(Color.bookBackground)
-
+            Divider()
+        }
+        .background(Color.bookBackground)
+        .ignoresSafeArea(edges: .top)
+        .listStyle(.plain)
     }
 }
 

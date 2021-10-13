@@ -29,6 +29,7 @@ struct QuoteView: View {
             Spacer()
         }
         .background(Color.bookBackground)
+        .ignoresSafeArea(edges: .top)
     }
 }
 
